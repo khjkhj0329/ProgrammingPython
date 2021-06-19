@@ -53,8 +53,11 @@ def main():
             elif part == '2': # 배
                 disease.check_stomach()
         elif selected_menu == '5':
-            answer = input('다시 시작하시겠습니까? (y/s) :')
+            answer = input('다시 시작하시겠습니까? (y/n) : ')
             if answer == 'y':
+                print('==================')
+                print('메뉴를 다시 입력해주세요.')
+                print('==================')
                 continue
             elif answer == 'n':
                 print('프로그램을 종료합니다. 감사합니다^^')
